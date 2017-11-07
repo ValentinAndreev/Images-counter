@@ -7,4 +7,5 @@ def counter(directory)
   y = files.uniq.map{ |i| [i, files.count(i)] }
   y.each {|a| hs << {filename: a[0], count: a[1]} }
   puts hs.inspect
+  hs
 end
